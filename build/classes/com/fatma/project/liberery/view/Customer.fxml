@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="816.0" prefWidth="1011.0" style="-fx-background-color: #3f7985;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fatma.project.liberery.controller.CustomerController">
+   <children>
+      <TextField fx:id="search_cust" layoutX="289.0" layoutY="45.0" prefHeight="46.0" prefWidth="708.0" promptText="Search about books by id or name" />
+  <TableView fx:id="custTable" layoutX="265.0" layoutY="120.0" onMouseClicked="#getSelectedCul" prefHeight="686.0" prefWidth="732.0">
+    <columns>
+        <TableColumn fx:id="colID" prefWidth="52.0" text="ID" />
+        <TableColumn fx:id="colName" prefWidth="200.0" text="Name" />
+        <TableColumn fx:id="colPhoneNumber" prefWidth="113.0" text="PhoneNumber" />
+        <TableColumn fx:id="colAddress" prefWidth="203.0" text="Address" />
+        <TableColumn fx:id="colEmployeeID" prefWidth="84.0" text="Employees_id" />
+    </columns>
+</TableView>
+      <Button layoutX="30.0" layoutY="495.0" mnemonicParsing="false" onAction="#addCustomer" prefHeight="46.0" prefWidth="201.0" style="-fx-background-color: #5eb1bf;" text="Add Customer" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="30.0" layoutY="560.0" mnemonicParsing="false" onAction="#editCustomer" prefHeight="46.0" prefWidth="201.0" style="-fx-background-color: #5eb1bf;" text="Edit Customer" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="cust_id" layoutX="30.0" layoutY="139.0" prefHeight="46.0" prefWidth="201.0" promptText="ID" />
+      <TextField fx:id="cust_name" layoutX="30.0" layoutY="207.0" prefHeight="46.0" prefWidth="201.0" promptText="Name" />
+      <TextField fx:id="cust_phonenumber" layoutX="30.0" layoutY="276.0" prefHeight="46.0" prefWidth="201.0" promptText="Phone Number" />
+      <TextField fx:id="cust_address" layoutX="30.0" layoutY="343.0" prefHeight="46.0" prefWidth="201.0" promptText="Address" />
+      <TextField fx:id="employe_id" layoutX="30.0" layoutY="412.0" prefHeight="46.0" prefWidth="201.0" promptText="emplyee ID" />
+      <ImageView fitHeight="31.0" fitWidth="32.0" layoutX="13.0" layoutY="11.0" onMouseClicked="#back_from_customer" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../libererysystem/arrow.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

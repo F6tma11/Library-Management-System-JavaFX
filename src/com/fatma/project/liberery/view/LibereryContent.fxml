@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="816.0" prefWidth="1011.0" style="-fx-background-color: #3f7985;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fatma.project.liberery.controller.LibereryContentController">
+   <children>
+      <Button layoutX="132.0" layoutY="526.0" mnemonicParsing="false" onAction="#goToBooksPage" prefHeight="51.0" prefWidth="306.0" style="-fx-background-color: #5eb1bf;" text="Books" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="596.0" layoutY="526.0" mnemonicParsing="false" onAction="#goToCustomerPage" prefHeight="51.0" prefWidth="306.0" style="-fx-background-color: #5eb1bf;" text="Customers" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="21.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="348.0" fitWidth="386.0" layoutX="111.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../libererysystem/books%20vector.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="327.0" fitWidth="335.0" layoutX="586.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../libererysystem/customers%20vector.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="32.0" layoutX="13.0" layoutY="12.0" onMouseClicked="#arrow_back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../libererysystem/arrow.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
